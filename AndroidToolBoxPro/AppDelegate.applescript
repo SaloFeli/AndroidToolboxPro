@@ -13,7 +13,7 @@ script AppDelegate
 	property theWindow : missing value
 	
 	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
+		on myButtonHandler_(sender)
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
