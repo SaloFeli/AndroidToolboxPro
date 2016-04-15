@@ -14,6 +14,9 @@ script AppDelegate
 	
 	on applicationWillFinishLaunching_(aNotification)
 		on myButtonHandler_(sender)
+		tell application "Terminal"
+		do shell script "cd android/sdk/platform-tools && ./adb devices"
+		
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
